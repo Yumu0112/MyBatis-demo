@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
-  id int unsigned AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  PRIMARY KEY(id)
+id int unsigned AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL,
+PRIMARY KEY(id)
 );
 
 INSERT INTO users (id, name) VALUES (1,'user01');

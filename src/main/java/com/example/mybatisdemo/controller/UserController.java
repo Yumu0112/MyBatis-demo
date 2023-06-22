@@ -19,14 +19,14 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> users() {
-        return userService.findAll();
+        return userService.findUser();
     }
 
 //    UserResponseを使ってnameだけを表示する
-//     controllerで処理をハンドリング
+//    controllerで処理をハンドリング
     @GetMapping("/users/index")
     public List<UserResponse> usersIndex() {
-        List<User> users = userService.findAll();
+        List<User> users = userService.findUser();
         List<UserResponse> userResponses = users.stream().map(UserResponse::new).toList();
 
         return userResponses;

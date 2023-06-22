@@ -14,7 +14,7 @@ public class UserServiceImpl implements  UserService {
     public UserServiceImpl(UserMapper userMapper) {
         this.userMapper = userMapper;
     }
-    public List<User> findAll() {
-        return userMapper.findAll();
+    public List<User> findUser() {
+        return userMapper.findUser();
     }
 }
